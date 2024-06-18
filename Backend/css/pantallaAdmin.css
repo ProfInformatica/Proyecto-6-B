@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('imagenes/Foto-de-escuela-colegio-san-jose-cordoba.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+  }
+  h3 {
+    color: #701622;
+  }
+  .btn-custom {
+    background-color: #701622;
+  }

@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*text-transform: capitalize;*/
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --navbar-color: #701622;
+    --hover-color: #ffc400;
+    --body-color: rgba(255, 255, 255, 0.8);
+    --boxshadow-color: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --Trans-02: all 0.2s ease;
+    --Trans-03: all 0.3s ease;
+    --Trans-04: all 0.4s ease;
+    --Trans-05: all 0.5s ease;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: url('../img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-view{
+    background-color: var(--navbar-color);
+}
+footer{
+    background-color: var(--navbar-color);
+    margin-top: 20px;
+
+}
+.colorDropdown{
+    background-color: var(--navbar-color);
+}
+.footerColor{
+    background-color: var(--navbar-color);
+    
+}
+
+.colorDropdown li a{
+    color:var(--body-color);
+}
+header, main, footer {
+    width: 100%;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    padding: 10px;
+    background-color: var(--body-color);
+    border-radius: 10px;
+    box-shadow: var(--boxshadow-color);
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+
+}
+
+.colorOption{
+    background-color: var(--hover-color);
+    color:var(--body-color);
+    border-radius: 5px;
+    border: 1px solid var(--navbar-color); /* Borde de las celdas */
+}
+.footerContainer{
+    padding: 0%;
+    box-shadow: none;
+}
+.rowIndex {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto; /* Centrar el contenido */
+    display: flex; /* Utiliza flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en la línea siguiente si es necesario */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    
+}
+.col.s12.m4 {
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.rowDashboar {
+
+    display: flex; /* Utiliza flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en la línea siguiente si es necesario */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    
+}
+
+h2 {
+    color: var(--navbar-color);
+}
+
+.btn-custom {
+    background-color: var(--navbar-color);
+}
+
+.logo {
+    width: 30%;
+    height: auto;
+}
+
+.logo2 {
+    display: none;
+}
+
+nav {
+    background-color: var(--navbar-color);
+}
+
+.nav-wrapper {
+    padding-left: 20px;
+}
+
+.sidenav-overlay {
+    z-index: 0;
+}
+
+.user-view .background img {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+}
+
+.tarjeta {
+    width: 55%;
+}
+
+.Sidebar {
+    width: 15%;
+    height: auto;
+    max-width: 150px;
+    margin: 0;
+    display: block;
+}
+
+.logoflex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logofooter {
+    width: 5%;
+    height: auto;
+
+}
+.logofooterDiv{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+}
+.username {
+    color: white;
+}
+
+/* Ajustes para las tarjetas (cards) */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    flex: 1; /* Para que la imagen ocupe el espacio disponible */
+}
+
+.card-content {
+    flex: 1; /* Para que el contenido ocupe el espacio disponible */
+}
+
+/* Ajustar tamaño de imágenes dentro de las tarjetas */
+.card-image img {
+    height: 200px; /* Ajustar altura de la imagen */
+    object-fit: cover; /* Ajustar para que la imagen cubra el espacio disponible */
+}
+
+/* Estilo básico para tablas */
+.table-container {
+    overflow-x: auto; /* Permitir desplazamiento horizontal en pantallas pequeñas */
+    margin: 20px 0;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #ddd; /* Borde de las celdas */
+    padding: 8px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+    white-space: nowrap; /* Evitar saltos de línea */
+}
+
+.table-container h3 {
+    font-size: 20px; /* Tamaño de fuente más pequeño */
+}
+
+.table-container th, .table-container td {
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+}
+
+/* CSS combinado para texto en minúsculas y letra pequeña */
+.texto-en-minusculas {
+    text-transform: lowercase;
+}
+.texto-link{
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+}
+.texto-tam{
+    font-size: 50px; /* Tamaño de fuente más pequeño */
+}
+.texto-chico {
+    font-size: 12px; /* Ejemplo de tamaño específico */
+}
+
+/* Media Queries para ajustar el tamaño de las tarjetas en dispositivos móviles */
+@media (max-width: 992px) {
+    .col.s12.m4 {
+        width: 100%; /* Las tarjetas ocuparán todo el ancho en dispositivos móviles */
+    }
+    
+    .card-image img {
+        height: auto; /* Ajustar la altura de la imagen */
+        object-fit: cover; /* Ajustar para que la imagen cubra el espacio disponible */
+    }
+    
+    .card {
+        margin-bottom: 20px; /* Añadir un margen inferior para separar las tarjetas */
+        
+    }
+
+    .rowDashboar .col.s12.m4 {
+        width: 100%; /* Las tarjetas ocuparán todo el ancho en dispositivos más pequeños */
+    }
+    .logo2 {
+        display: none;
+    }
+    .card .card-title {
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+
+@media (min-width: 993px) {
+    .logo2 {
+        padding-top: 4px;
+        width: 5%;
+        height: auto;
+        display: block;
+    }
+
+    .rowIndex, .rowDashboar {
+        max-width: 70%; /* Reducir el ancho máximo de las filas en pantallas grandes */
+    }
+
+    .table-container h3 {
+        font-size: 30px; /* Tamaño de fuente más pequeño */
+    }
+
+    .table-container th, .table-container td {
+        font-size: 15px; /* Tamaño de fuente más pequeño */
+    }
+    .rowDashboar .col.s12.m4 {
+        width: 50%; /* Las tarjetas ocuparán m4 (aproximadamente 30%) en pantallas grandes */
+    }
+    .card .card-title {
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
